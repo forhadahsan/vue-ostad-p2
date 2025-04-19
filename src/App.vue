@@ -19,6 +19,14 @@
     <p v-else-if="weater=='c'">Cloudy</p>
     <p v-else-if="weater=='ci'">Cyclone</p>
   </div>
+  <div>
+    <h2>Weather Loop (v-Show)</h2>
+    <p v-show="weater=='s'">Sunny</p>
+    <p v-show="weater=='pc'">Partially Cloudy</p>
+    <p v-show="weater=='r'">Rain</p>
+    <p v-show="weater=='c'">Cloudy</p>
+    <p v-show="weater=='ci'">Cyclone</p>
+  </div>
 </template>
 
 <style scoped>
