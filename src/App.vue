@@ -1,5 +1,7 @@
 <script setup>
  const weater = 'r' // s, pc, r, c, ci
+
+ const weekends = false
 </script>
 
 <template>
@@ -27,6 +29,10 @@
     <p v-show="weater=='c'">Cloudy</p>
     <p v-show="weater=='ci'">Cyclone</p>
   </div>
+  <div>
+    <h2>Weekend </h2>
+    <p class="h-10 flex items-center justify-center" :class="weekends?'bg-red-500':'bg-green-400'">Weekend</p>
+  </div> 
 </template>
 
 <style scoped>
