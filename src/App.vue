@@ -1,7 +1,7 @@
 <script setup>
  const weater = 'r' // s, pc, r, c, ci
 
- const weekends = false
+ const weekends = false // true, false
 </script>
 
 <template>
@@ -31,7 +31,7 @@
   </div>
   <div>
     <h2>Weekend </h2>
-    <p class="h-10 flex items-center justify-center" :class="weekends?'bg-red-500':'bg-green-400'">Weekend</p>
+    <p class="h-10 flex items-center justify-center" :class="weekends?'bg-red-500 text-4xl':'bg-green-400 text-2xl'">Weekend</p>
   </div> 
 </template>
 
